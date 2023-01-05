@@ -1,0 +1,295 @@
+/* .modal_back{
+    display: flex;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+} */
+
+.black_bg{
+    display: none;
+    position: fixed;
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    background-color:rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+.modal_wrap{
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    /* background: rgba(0,0,0,0.2); */
+    z-index: 7;
+}
+
+.modal_close{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 10px;
+    right: 580px;
+    background-color: none;
+    border: none;
+    color: #888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal_close> a{
+    display: block;
+    width: 25px;
+    height: 25px;
+    background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+    text-indent: -9999px;
+}
+
+
+.modal_page{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(255,255,255,0.5); */
+
+}
+
+
+
+.modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    height: 653.6px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #e1e2e3;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.modal_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 0;
+    width: 398px;
+    height: 64px;
+}
+
+
+.modal_header > span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 0;
+    width: 230px;
+    height: 64px;
+}
+
+.modal_header > span > svg{
+    margin: 0;
+    height: 0;
+    width: 140px;
+    height: 17px;
+}
+
+
+.modal_main{
+    margin: 0;
+    padding: 20px;
+    width: 358px;
+    height: 547.6px;
+}
+
+.modal_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 358;
+}
+
+.modal_text > h1{
+    text-align: center;
+    margin: 18.76px 0;
+    padding: 0px;
+    width: 358px;
+    height: 38px;
+    font-size: 27px;
+}
+.modal_text > h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 12.45px 0;
+    padding: 0;
+    width: 358px;
+    height: 44px;
+    color:#888;
+    font-weight: 400;
+    font-size: 14px;
+    --text-spacing-bodyalt: 0.0096em;
+}
+
+.email_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 17px;
+    margin-bottom: 7px;
+    padding: 0;
+    width: 358px;
+    height: 80px;
+}
+
+.email_box > p{
+    margin:0;
+    margin-bottom: 7px;
+    padding: 0;
+    width: 358px;
+    height: 20px;
+    color: #888888;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.email_box > input{
+    margin-top: 0;
+    margin-bottom: 8px;
+    padding: 0 12px;
+    width: 332px;
+    height: 48px;
+    border: 1px solid #e1e2e3;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+input::placeholder {
+    color: #e1e2e3}
+
+
+
+.email_button{
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding: 1px 6px;
+    width: 358px;
+    height: 50px;
+    border: none    ;
+    background-color: #f2f4f7;
+    border-radius: 25px;
+    font-size: 16px;
+    color: #cccccc;
+}
+
+#or {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0 15px 0;
+    padding: 0;
+    width: 358px;
+    height: 16px;
+    font-size: 11px;
+    color: #939393;
+    text-align: center;
+    font-weight: bold;
+}
+
+.modal_social_link{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 358px;
+    height: 78px;
+}
+
+.modal_social_link > button{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 89.5px;
+    height: 78px;
+    border: none;
+    background-color: white;
+}
+
+
+.modal_social_link > button > span,svg{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 56x;
+    height: 56px;
+}
+
+#google_circle{
+    border: 1px solid #e1e2e3;
+    border-radius: 50%;
+}
+
+.modal_social_link > button > p{
+    margin: 8px 0 0 0;
+    padding: 0;
+    width: 32.8px;
+    height: 14px;
+    color: #888888;
+    font-size: 11px;
+}
+
+
+#modal_line{
+    border: none;
+    border-bottom: 1px solid #e1e2e3;
+    padding: 0;
+    margin: 40px 0;
+}
+
+.bottom_info{
+    margin: 0;
+    padding: 0;
+    width: 358px;
+    height: 18px;
+    text-align: center;
+}
+
+.bottom_info > span{    
+    margin: 0;
+    padding: 0;
+    width: 358px;
+    height: 18px;
+    font-size: 13px;
+    color: #767676;
+    font-weight: bold;
+    
+}
+
+.bottom_info > span:nth-child(1){
+    margin-right: 8px;
+}

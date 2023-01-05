@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(실습)개발 채용 정보｜원티드</title>
+    <link href="file:///C:/wisdom/%EC%9B%B9/%EC%9D%B4%EB%AF%B8%EC%A7%80%ED%8C%8C%EC%9D%BC%EB%AA%A8%EC%9D%8C/%EC%9B%90%ED%8B%B0%EB%93%9C/wanted_favicon.webp" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="../채용페이지/incruit.css">
+    <link rel="stylesheet" href="../채용페이지/incruit_main.css">
+    <link rel="stylesheet" href="../채용페이지/incruit_menu.css">
+    </style>
+</head>
+<body> 
+    <div class="page">
+        <div class="header">
+            <div class="header-box">
+                <div class="header-box-left">
+                    <div class="menubar">
+                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ficon-menu.png&amp;w=undefined&amp;q=75" alt="메뉴삼선바" style="width:17px;height:14px; object-fit:cover"> 
+                    </div>
+                    <div class="menulogo">
+                        <img src="https://www.wantedlab.com/img/logo.png" alt="메뉴로고" style="width:74.38px;height:20.8px;object-fit:contain"> 
+                    </div>
+                </div>
+
+               <div class="nav">
+                    <ul class="bar">
+                        <li id="nav_bar1"><a href="#" id="nav_bar1">채용</a></li>
+                        <li id="nav_bar2"><a href="#" id="nav_bar2">이벤트</a></li>
+                        <li id="nav_bar3"><a href="#" id="nav_bar3">직군별 연봉</a></li>
+                        <li id="nav_bar4"><a href="#" id="nav_bar4">이력서</a></li>
+                        <li id="nav_bar5"><a href="#" id="nav_bar5">커뮤니티</a></li>
+                        <li id="nav_bar6"><a href="#" id="nav_bar6">프리랜서</a></li>
+                        <li id="nav_bar7"><a href="#" id="nav_bar7">AI합격예측</a></li>
+                    </ul>
+            
+                </div>
+
+                <div class="header-box-right">
+                    <div class="header-box-right-box">
+                        <div class="box">
+                            <button class="button_search">
+                                <svg xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18"><defs><path id="qt2dnsql4a" d="M15.727 17.273a.563.563 0 10.796-.796l-4.875-4.875-.19-.165a.563.563 0 00-.764.028 5.063 5.063 0 111.261-2.068.562.562 0 101.073.338 6.188 6.188 0 10-1.943 2.894l4.642 4.644z"></path></defs><g fill="none" fill-rule="evenodd"><use fill="#333" fill-rule="nonzero" stroke="#333" stroke-width=".3" xlink:href="#qt2dnsql4a"></use></g></svg>
+                            </button>
+                        </div>
+                    
+                        <div id="log">
+                            <button class="signUpButton" type="button" data-attribute-id="gnb" data-gnb-kind="signupLogin">회원가입/로그인</button>
+                        </div>
+                        <div id="company" data-attribute-id="gnb" data-gnb-kind="forEmployers">
+                            <a class="dashboardButton" href="/dashboard">기업 서비스</a>
+                        </div>    
+                    </div>    
+                </div>
+            </div>
+            <div class="menu_box">
+                <div class="menu">
+                    <div class="menu_title">
+                        <div class="menu_title_left">
+                            <span>개발</span>
+                            <button>
+                                <svg xmlns="https://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path fill="#767676" fill-rule="nonzero" d="M2.28 3.22a.75.75 0 0 0-1.06 1.06l4.25 4.25a.75.75 0 0 0 1.06 0l4.25-4.25a.75.75 0 0 0-1.06-1.06L6 6.94 2.28 3.22z"></path></svg>
+                            </button>    
+                        </div>
+                        <div class="menu_title_middle1">    
+                        </div>
+                        <div class="menu_title_middle2">
+                        </div>
+                        <div class="menu_title-right">
+                            <span>개발 전체</span>
+                            <button>
+                                <svg xmlns="https://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path fill="#767676" fill-rule="nonzero" d="M2.28 3.22a.75.75 0 0 0-1.06 1.06l4.25 4.25a.75.75 0 0 0 1.06 0l4.25-4.25a.75.75 0 0 0-1.06-1.06L6 6.94 2.28 3.22z"></path></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="menu_content">
+                        <div class="menu_content_top">
+                            <button id="menu_button_1">
+                                <span id="menu_button_span1">지역</span>
+                                <span id="menu_button_span2">서울</span>
+                            </button>
+                            <button id="menu_button_2">
+                                <span id="menu_button_span1">경력</span>
+                                <span id="menu_button_span2">신입</span>
+                                <svg width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="https://www.w3.org/2000/svg"><path d="M7.33334 0.494202C7.85691 0.494202 8.14842 1.1611 7.82205 1.61224L4.50038 6.20371C4.25071 6.54882 3.77503 6.54971 3.5243 6.20554L0.179295 1.61408C-0.149094 1.16332 0.14211 0.494202 0.666672 0.494202H7.33334Z" fill="#333333"></path></svg>
+                            </button>
+                            <button id="menu_button_3">기술스택
+                                <svg width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="https://www.w3.org/2000/svg"><path d="M7.33334 0.494202C7.85691 0.494202 8.14842 1.1611 7.82205 1.61224L4.50038 6.20371C4.25071 6.54882 3.77503 6.54971 3.5243 6.20554L0.179295 1.61408C-0.149094 1.16332 0.14211 0.494202 0.666672 0.494202H7.33334Z" fill="#333333"></path></svg>
+                            </button>
+                            <button id="menu_button_4">응답률순
+                                <svg width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="https://www.w3.org/2000/svg"><path d="M7.33334 0.494202C7.85691 0.494202 8.14842 1.1611 7.82205 1.61224L4.50038 6.20371C4.25071 6.54882 3.77503 6.54971 3.5243 6.20554L0.179295 1.61408C-0.149094 1.16332 0.14211 0.494202 0.666672 0.494202H7.33334Z" fill="#333333"></path></svg>
+                            </button>
+                        </div>
+                        <div>
+                            <hr class="menu_hr">
+                        </div>
+                        <div class="menu_content_bottom">
+                            <button id="button_menu_left">
+                                <span class="button_menu_left_span"><svg class="button_menu_left_svg" viewBox="0 0 18 18"><path d="m6.045 9 5.978-5.977a.563.563 0 1 0-.796-.796L4.852 8.602a.562.562 0 0 0 0 .796l6.375 6.375a.563.563 0 0 0 .796-.796L6.045 9z"></path></svg></span>
+                            </button>
+                            <button>연봉이 최고의 복지
+                                <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F634f02e0-9f6e-11ec-b909-0242ac120002.png&w=50&q=75" alt="원숭이">
+                            </button>
+                            <button>연봉이 최고의 복지
+                                <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F634f02e0-9f6e-11ec-b909-0242ac120002.png&w=50&q=75" alt="원숭이">
+                            </button>
+                            <button>연봉이 최고의 복지
+                                <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F634f02e0-9f6e-11ec-b909-0242ac120002.png&w=50&q=75" alt="원숭이">
+                            </button>
+                            <button>연봉이 최고의 복지
+                                <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F634f02e0-9f6e-11ec-b909-0242ac120002.png&w=50&q=75" alt="원숭이">
+                            </button>
+                            <button>연봉이 최고의 복지
+                                <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F634f02e0-9f6e-11ec-b909-0242ac120002.png&w=50&q=75" alt="원숭이">
+                            </button>
+                            <button>연봉이 최고의 복지
+                                <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F634f02e0-9f6e-11ec-b909-0242ac120002.png&w=50&q=75" alt="원숭이">
+                            </button>
+                            <button id="button_menu_right">
+                                <span class="button_menu_right_span"><svg class="button_menu_right_svg" viewBox="0 0 18 18"><path d="m11.955 9-5.978 5.977a.563.563 0 0 0 .796.796l6.375-6.375a.563.563 0 0 0 0-.796L6.773 2.227a.562.562 0 1 0-.796.796L11.955 9z"></path></svg></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>             
+        <div class="main">
+            <div class="main_box">
+                <div class="bookmark_box">
+                    <button>
+                        <svg width="13" height="17" viewBox="0 0 13 17" style="color: rgb(51, 102, 255);"><defs><path id="bookmarkIconFill" d="M6.25 13.21L.905 16.22c-.403.228-.905-.06-.905-.517V.596C0 .267.27 0 .605 0h11.29c.334 0 .605.267.605.596v15.107c0 .458-.502.745-.905.518L6.25 13.209z"></path></defs><g fill="none" fill-rule="evenodd" transform="translate(.188)"><use fill="currentColor" xlink:href="#bookmarkIconFill"></use></g></svg>
+                        <span>북마크 모아보기</span>
+                        <svg width="10" height="16" style="color:#3366FF;" viewBox="0 0 12 12"><path fill="currentColor" d="M4.22 9.72a.75.75 0 001.06 1.06l4.25-4.25a.75.75 0 000-1.06L5.28 1.22a.75.75 0 00-1.06 1.06L7.94 6 4.22 9.72z"></path></svg>
+                    </button>
+                </div>
+                <h3 class="bookmark_title">적극 채용 중인 회사</h3>
+                <div class="bookmark_content">
+                    <div class="bookmark_content_box">
+                        <a href="/company/2979" class="Featured_sliderItem__FY8yb" aria-label="featured company card link" data-attribute-id="company__click" data-job-category-id="518" data-job-category="IT" data-job-role-id="all" data-job-role="all" data-company-id="2979" data-company-name="콜론디(심쿵)" data-ad-id="39473" data-marketing-case="topPicks">
+                            <div class="bookmark_up">
+                                <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F10785%2Fxyb93wefrghj3ppy__400_400.png&w=400&q=75" alt="back_img">
+                            </div>
+                            <div class="bookmark_center" >
+                                <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fwdes%2F0_5.ab46764a.png&w=100&q=75" alt="middle_img">
+                            </div>
+                            <div class="bookmark_down">  
+                                <h4>로민</h4>
+                                <h5>11개 포지션</h5>
+                            </div>
+                        </a>  
+                        
+                    </div>
+                    <div class="bookmark_content_box">
+                        <a href="/company/2979" class="Featured_sliderItem__FY8yb" aria-label="featured company card link" data-attribute-id="company__click" data-job-category-id="518" data-job-category="IT" data-job-role-id="all" data-job-role="all" data-company-id="2979" data-company-name="콜론디(심쿵)" data-ad-id="39473" data-marketing-case="topPicks">
+                            <div class="bookmark_up">
+                                <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F10785%2Fxyb93wefrghj3ppy__400_400.png&w=400&q=75" alt="back_img">
+                            </div>
+                            <div class="bookmark_center" >
+                                <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fwdes%2F0_5.ab46764a.png&w=100&q=75" alt="middle_img">
+                            </div>
+                            <div class="bookmark_down">  
+                                <h4>로민</h4>
+                                <h5>11개 포지션</h5>
+                            </div>
+                        </a>  
+                        
+                    </div>
+                    <div class="bookmark_content_box">
+                        <a href="/company/2979" class="Featured_sliderItem__FY8yb" aria-label="featured company card link" data-attribute-id="company__click" data-job-category-id="518" data-job-category="IT" data-job-role-id="all" data-job-role="all" data-company-id="2979" data-company-name="콜론디(심쿵)" data-ad-id="39473" data-marketing-case="topPicks">
+                            <div class="bookmark_up">
+                                <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F10785%2Fxyb93wefrghj3ppy__400_400.png&w=400&q=75" alt="back_img">
+                            </div>
+                            <div class="bookmark_center" >
+                                <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fwdes%2F0_5.ab46764a.png&w=100&q=75" alt="middle_img">
+                            </div>
+                            <div class="bookmark_down">  
+                                <h4>로민</h4>
+                                <h5>11개 포지션</h5>
+                            </div>
+                        </a>  
+                        
+                    </div>
+                    <div class="bookmark_content_box">
+                        <a href="/company/2979" class="Featured_sliderItem__FY8yb" aria-label="featured company card link" data-attribute-id="company__click" data-job-category-id="518" data-job-category="IT" data-job-role-id="all" data-job-role="all" data-company-id="2979" data-company-name="콜론디(심쿵)" data-ad-id="39473" data-marketing-case="topPicks">
+                            <div class="bookmark_up">
+                                <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F10785%2Fxyb93wefrghj3ppy__400_400.png&w=400&q=75" alt="back_img">
+                            </div>
+                            <div class="bookmark_center" >
+                                <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fwdes%2F0_5.ab46764a.png&w=100&q=75" alt="middle_img">
+                            </div>
+                            <div class="bookmark_down">  
+                                <h4>로민</h4>
+                                <h5>11개 포지션</h5>
+                            </div>
+                        </a>  
+                        
+                    </div>
+                    <div class="bookmark_content_box">
+                        <a href="/company/2979" class="Featured_sliderItem__FY8yb" aria-label="featured company card link" data-attribute-id="company__click" data-job-category-id="518" data-job-category="IT" data-job-role-id="all" data-job-role="all" data-company-id="2979" data-company-name="콜론디(심쿵)" data-ad-id="39473" data-marketing-case="topPicks">
+                            <div class="bookmark_up">
+                                <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F10785%2Fxyb93wefrghj3ppy__400_400.png&w=400&q=75" alt="back_img">
+                            </div>
+                            <div class="bookmark_center" >
+                                <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fwdes%2F0_5.ab46764a.png&w=100&q=75" alt="middle_img">
+                            </div>
+                            <div class="bookmark_down">  
+                                <h4>로민</h4>
+                                <h5>11개 포지션</h5>
+                            </div>
+                        </a>  
+                        
+                    </div>
+                </div>
+                <div class="gallery">
+                    <ul class="gallery_ul">
+                        <li class="gallery_li">
+                            <div class="gallery_box">
+                                <a href="/wd/133067" class="gallery_a"aria-label="position link" data-attribute-id="position__click" data-job-category-id="530" data-job-category="Sales" data-company-id="26431" data-company-name="레인보우로보틱스" data-position-id="133067" data-position-name="영업전략, 영업기획, 영업총괄" data-response-level="very_high" data-response-rate="100" data-ai-score="" data-ai-score-status="" data-recommend-model-status="notBase" data-recommend-model-index="0">
+                                    <header class="gallery_header">
+                                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F19%2Fjrvo3iu1po5snygl__1080_790.png&w=1000&q=75" width="250px"; height="187.5px"; alt="사진" >
+                                        <button class="gallery_button">
+                                            <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path><path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path></svg>
+                                        </button>
+                                    </header>
+                                    <div class="textbox">
+                                        <div class="text1">Automation QA Engineer</div>
+                                        <div class="text2">밸런스히어로 (트루밸런스)</div>
+                                        <div class="text3">응답률 매우 높음</div>
+                                        <div class="text4">서울·한국</div>
+                                        <div class="text5">채용보상금 1,000,000원</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="gallery_li">
+                            <div class="gallery_box">
+                                <a href="/wd/133067" class="gallery_a"aria-label="position link" data-attribute-id="position__click" data-job-category-id="530" data-job-category="Sales" data-company-id="26431" data-company-name="레인보우로보틱스" data-position-id="133067" data-position-name="영업전략, 영업기획, 영업총괄" data-response-level="very_high" data-response-rate="100" data-ai-score="" data-ai-score-status="" data-recommend-model-status="notBase" data-recommend-model-index="0">
+                                    <header class="gallery_header">
+                                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F19%2Fjrvo3iu1po5snygl__1080_790.png&w=1000&q=75" width="250px"; height="187.5px"; alt="사진" >
+                                        <button class="gallery_button">
+                                            <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path><path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path></svg>
+                                        </button>
+                                    </header>
+                                    <div class="textbox">
+                                        <div class="text1">Automation QA Engineer</div>
+                                        <div class="text2">밸런스히어로 (트루밸런스)</div>
+                                        <div class="text3">응답률 매우 높음</div>
+                                        <div class="text4">서울·한국</div>
+                                        <div class="text5">채용보상금 1,000,000원</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="gallery_li">
+                            <div class="gallery_box">
+                                <a href="/wd/133067" class="gallery_a"aria-label="position link" data-attribute-id="position__click" data-job-category-id="530" data-job-category="Sales" data-company-id="26431" data-company-name="레인보우로보틱스" data-position-id="133067" data-position-name="영업전략, 영업기획, 영업총괄" data-response-level="very_high" data-response-rate="100" data-ai-score="" data-ai-score-status="" data-recommend-model-status="notBase" data-recommend-model-index="0">
+                                    <header class="gallery_header">
+                                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F19%2Fjrvo3iu1po5snygl__1080_790.png&w=1000&q=75" width="250px"; height="187.5px"; alt="사진" >
+                                        <button class="gallery_button">
+                                            <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path><path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path></svg>
+                                        </button>
+                                    </header>
+                                    <div class="textbox">
+                                        <div class="text1">Automation QA Engineer</div>
+                                        <div class="text2">밸런스히어로 (트루밸런스)</div>
+                                        <div class="text3">응답률 매우 높음</div>
+                                        <div class="text4">서울·한국</div>
+                                        <div class="text5">채용보상금 1,000,000원</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="gallery_li">
+                            <div class="gallery_box">
+                                <a href="/wd/133067" class="gallery_a"aria-label="position link" data-attribute-id="position__click" data-job-category-id="530" data-job-category="Sales" data-company-id="26431" data-company-name="레인보우로보틱스" data-position-id="133067" data-position-name="영업전략, 영업기획, 영업총괄" data-response-level="very_high" data-response-rate="100" data-ai-score="" data-ai-score-status="" data-recommend-model-status="notBase" data-recommend-model-index="0">
+                                    <header class="gallery_header">
+                                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F19%2Fjrvo3iu1po5snygl__1080_790.png&w=1000&q=75" width="250px"; height="187.5px"; alt="사진" >
+                                        <button class="gallery_button">
+                                            <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path><path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path></svg>
+                                        </button>
+                                    </header>
+                                    <div class="textbox">
+                                        <div class="text1">Automation QA Engineer</div>
+                                        <div class="text2">밸런스히어로 (트루밸런스)</div>
+                                        <div class="text3">응답률 매우 높음</div>
+                                        <div class="text4">서울·한국</div>
+                                        <div class="text5">채용보상금 1,000,000원</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="gallery_li">
+                            <div class="gallery_box">
+                                <a href="/wd/133067" class="gallery_a"aria-label="position link" data-attribute-id="position__click" data-job-category-id="530" data-job-category="Sales" data-company-id="26431" data-company-name="레인보우로보틱스" data-position-id="133067" data-position-name="영업전략, 영업기획, 영업총괄" data-response-level="very_high" data-response-rate="100" data-ai-score="" data-ai-score-status="" data-recommend-model-status="notBase" data-recommend-model-index="0">
+                                    <header class="gallery_header">
+                                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F19%2Fjrvo3iu1po5snygl__1080_790.png&w=1000&q=75" width="250px"; height="187.5px"; alt="사진" >
+                                        <button class="gallery_button">
+                                            <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path><path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path></svg>
+                                        </button>
+                                    </header>
+                                    <div class="textbox">
+                                        <div class="text1">Automation QA Engineer</div>
+                                        <div class="text2">밸런스히어로 (트루밸런스)</div>
+                                        <div class="text3">응답률 매우 높음</div>
+                                        <div class="text4">서울·한국</div>
+                                        <div class="text5">채용보상금 1,000,000원</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="gallery_li">
+                            <div class="gallery_box">
+                                <a href="/wd/133067" class="gallery_a"aria-label="position link" data-attribute-id="position__click" data-job-category-id="530" data-job-category="Sales" data-company-id="26431" data-company-name="레인보우로보틱스" data-position-id="133067" data-position-name="영업전략, 영업기획, 영업총괄" data-response-level="very_high" data-response-rate="100" data-ai-score="" data-ai-score-status="" data-recommend-model-status="notBase" data-recommend-model-index="0">
+                                    <header class="gallery_header">
+                                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F19%2Fjrvo3iu1po5snygl__1080_790.png&w=1000&q=75" width="250px"; height="187.5px"; alt="사진" >
+                                        <button class="gallery_button">
+                                            <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path><path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path></svg>
+                                        </button>
+                                    </header>
+                                    <div class="textbox">
+                                        <div class="text1">Automation QA Engineer</div>
+                                        <div class="text2">밸런스히어로 (트루밸런스)</div>
+                                        <div class="text3">응답률 매우 높음</div>
+                                        <div class="text4">서울·한국</div>
+                                        <div class="text5">채용보상금 1,000,000원</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="gallery_li">
+                            <div class="gallery_box">
+                                <a href="/wd/133067" class="gallery_a"aria-label="position link" data-attribute-id="position__click" data-job-category-id="530" data-job-category="Sales" data-company-id="26431" data-company-name="레인보우로보틱스" data-position-id="133067" data-position-name="영업전략, 영업기획, 영업총괄" data-response-level="very_high" data-response-rate="100" data-ai-score="" data-ai-score-status="" data-recommend-model-status="notBase" data-recommend-model-index="0">
+                                    <header class="gallery_header">
+                                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F19%2Fjrvo3iu1po5snygl__1080_790.png&w=1000&q=75" width="250px"; height="187.5px"; alt="사진" >
+                                        <button class="gallery_button">
+                                            <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path><path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path></svg>
+                                        </button>
+                                    </header>
+                                    <div class="textbox">
+                                        <div class="text1">Automation QA Engineer</div>
+                                        <div class="text2">밸런스히어로 (트루밸런스)</div>
+                                        <div class="text3">응답률 매우 높음</div>
+                                        <div class="text4">서울·한국</div>
+                                        <div class="text5">채용보상금 1,000,000원</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="gallery_li">
+                            <div class="gallery_box">
+                                <a href="/wd/133067" class="gallery_a"aria-label="position link" data-attribute-id="position__click" data-job-category-id="530" data-job-category="Sales" data-company-id="26431" data-company-name="레인보우로보틱스" data-position-id="133067" data-position-name="영업전략, 영업기획, 영업총괄" data-response-level="very_high" data-response-rate="100" data-ai-score="" data-ai-score-status="" data-recommend-model-status="notBase" data-recommend-model-index="0">
+                                    <header class="gallery_header">
+                                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F19%2Fjrvo3iu1po5snygl__1080_790.png&w=1000&q=75" width="250px"; height="187.5px"; alt="사진" >
+                                        <button class="gallery_button">
+                                            <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path><path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path></svg>
+                                        </button>
+                                    </header>
+                                    <div class="textbox">
+                                        <div class="text1">Automation QA Engineer</div>
+                                        <div class="text2">밸런스히어로 (트루밸런스)</div>
+                                        <div class="text3">응답률 매우 높음</div>
+                                        <div class="text4">서울·한국</div>
+                                        <div class="text5">채용보상금 1,000,000원</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="gallery_li">
+                            <div class="gallery_box">
+                                <a href="/wd/133067" class="gallery_a"aria-label="position link" data-attribute-id="position__click" data-job-category-id="530" data-job-category="Sales" data-company-id="26431" data-company-name="레인보우로보틱스" data-position-id="133067" data-position-name="영업전략, 영업기획, 영업총괄" data-response-level="very_high" data-response-rate="100" data-ai-score="" data-ai-score-status="" data-recommend-model-status="notBase" data-recommend-model-index="0">
+                                    <header class="gallery_header">
+                                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F19%2Fjrvo3iu1po5snygl__1080_790.png&w=1000&q=75" width="250px"; height="187.5px"; alt="사진" >
+                                        <button class="gallery_button">
+                                            <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path><path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path></svg>
+                                        </button>
+                                    </header>
+                                    <div class="textbox">
+                                        <div class="text1">Automation QA Engineer</div>
+                                        <div class="text2">밸런스히어로 (트루밸런스)</div>
+                                        <div class="text3">응답률 매우 높음</div>
+                                        <div class="text4">서울·한국</div>
+                                        <div class="text5">채용보상금 1,000,000원</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="gallery_li">
+                            <div class="gallery_box">
+                                <a href="/wd/133067" class="gallery_a"aria-label="position link" data-attribute-id="position__click" data-job-category-id="530" data-job-category="Sales" data-company-id="26431" data-company-name="레인보우로보틱스" data-position-id="133067" data-position-name="영업전략, 영업기획, 영업총괄" data-response-level="very_high" data-response-rate="100" data-ai-score="" data-ai-score-status="" data-recommend-model-status="notBase" data-recommend-model-index="0">
+                                    <header class="gallery_header">
+                                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F19%2Fjrvo3iu1po5snygl__1080_790.png&w=1000&q=75" width="250px"; height="187.5px"; alt="사진" >
+                                        <button class="gallery_button">
+                                            <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path><path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path></svg>
+                                        </button>
+                                    </header>
+                                    <div class="textbox">
+                                        <div class="text1">Automation QA Engineer</div>
+                                        <div class="text2">밸런스히어로 (트루밸런스)</div>
+                                        <div class="text3">응답률 매우 높음</div>
+                                        <div class="text4">서울·한국</div>
+                                        <div class="text5">채용보상금 1,000,000원</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="gallery_li">
+                            <div class="gallery_box">
+                                <a href="/wd/133067" class="gallery_a"aria-label="position link" data-attribute-id="position__click" data-job-category-id="530" data-job-category="Sales" data-company-id="26431" data-company-name="레인보우로보틱스" data-position-id="133067" data-position-name="영업전략, 영업기획, 영업총괄" data-response-level="very_high" data-response-rate="100" data-ai-score="" data-ai-score-status="" data-recommend-model-status="notBase" data-recommend-model-index="0">
+                                    <header class="gallery_header">
+                                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F19%2Fjrvo3iu1po5snygl__1080_790.png&w=1000&q=75" width="250px"; height="187.5px"; alt="사진" >
+                                        <button class="gallery_button">
+                                            <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path><path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path></svg>
+                                        </button>
+                                    </header>
+                                    <div class="textbox">
+                                        <div class="text1">Automation QA Engineer</div>
+                                        <div class="text2">밸런스히어로 (트루밸런스)</div>
+                                        <div class="text3">응답률 매우 높음</div>
+                                        <div class="text4">서울·한국</div>
+                                        <div class="text5">채용보상금 1,000,000원</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="gallery_li">
+                            <div class="gallery_box">
+                                <a href="/wd/133067" class="gallery_a"aria-label="position link" data-attribute-id="position__click" data-job-category-id="530" data-job-category="Sales" data-company-id="26431" data-company-name="레인보우로보틱스" data-position-id="133067" data-position-name="영업전략, 영업기획, 영업총괄" data-response-level="very_high" data-response-rate="100" data-ai-score="" data-ai-score-status="" data-recommend-model-status="notBase" data-recommend-model-index="0">
+                                    <header class="gallery_header">
+                                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F19%2Fjrvo3iu1po5snygl__1080_790.png&w=1000&q=75" width="250px"; height="187.5px"; alt="사진" >
+                                        <button class="gallery_button">
+                                            <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path><path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path></svg>
+                                        </button>
+                                    </header>
+                                    <div class="textbox">
+                                        <div class="text1">Automation QA Engineer</div>
+                                        <div class="text2">밸런스히어로 (트루밸런스)</div>
+                                        <div class="text3">응답률 매우 높음</div>
+                                        <div class="text4">서울·한국</div>
+                                        <div class="text5">채용보상금 1,000,000원</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="gallery_li">
+                            <div class="gallery_box">
+                                <a href="/wd/133067" class="gallery_a"aria-label="position link" data-attribute-id="position__click" data-job-category-id="530" data-job-category="Sales" data-company-id="26431" data-company-name="레인보우로보틱스" data-position-id="133067" data-position-name="영업전략, 영업기획, 영업총괄" data-response-level="very_high" data-response-rate="100" data-ai-score="" data-ai-score-status="" data-recommend-model-status="notBase" data-recommend-model-index="0">
+                                    <header class="gallery_header">
+                                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F19%2Fjrvo3iu1po5snygl__1080_790.png&w=1000&q=75" width="250px"; height="187.5px"; alt="사진" >
+                                        <button class="gallery_button">
+                                            <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path><path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path></svg>
+                                        </button>
+                                    </header>
+                                    <div class="textbox">
+                                        <div class="text1">Automation QA Engineer</div>
+                                        <div class="text2">밸런스히어로 (트루밸런스)</div>
+                                        <div class="text3">응답률 매우 높음</div>
+                                        <div class="text4">서울·한국</div>
+                                        <div class="text5">채용보상금 1,000,000원</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="gallery_li">
+                            <div class="gallery_box">
+                                <a href="/wd/133067" class="gallery_a"aria-label="position link" data-attribute-id="position__click" data-job-category-id="530" data-job-category="Sales" data-company-id="26431" data-company-name="레인보우로보틱스" data-position-id="133067" data-position-name="영업전략, 영업기획, 영업총괄" data-response-level="very_high" data-response-rate="100" data-ai-score="" data-ai-score-status="" data-recommend-model-status="notBase" data-recommend-model-index="0">
+                                    <header class="gallery_header">
+                                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F19%2Fjrvo3iu1po5snygl__1080_790.png&w=1000&q=75" width="250px"; height="187.5px"; alt="사진" >
+                                        <button class="gallery_button">
+                                            <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path><path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path></svg>
+                                        </button>
+                                    </header>
+                                    <div class="textbox">
+                                        <div class="text1">Automation QA Engineer</div>
+                                        <div class="text2">밸런스히어로 (트루밸런스)</div>
+                                        <div class="text3">응답률 매우 높음</div>
+                                        <div class="text4">서울·한국</div>
+                                        <div class="text5">채용보상금 1,000,000원</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="gallery_li">
+                            <div class="gallery_box">
+                                <a href="/wd/133067" class="gallery_a"aria-label="position link" data-attribute-id="position__click" data-job-category-id="530" data-job-category="Sales" data-company-id="26431" data-company-name="레인보우로보틱스" data-position-id="133067" data-position-name="영업전략, 영업기획, 영업총괄" data-response-level="very_high" data-response-rate="100" data-ai-score="" data-ai-score-status="" data-recommend-model-status="notBase" data-recommend-model-index="0">
+                                    <header class="gallery_header">
+                                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F19%2Fjrvo3iu1po5snygl__1080_790.png&w=1000&q=75" width="250px"; height="187.5px"; alt="사진" >
+                                        <button class="gallery_button">
+                                            <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path><path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path></svg>
+                                        </button>
+                                    </header>
+                                    <div class="textbox">
+                                        <div class="text1">Automation QA Engineer</div>
+                                        <div class="text2">밸런스히어로 (트루밸런스)</div>
+                                        <div class="text3">응답률 매우 높음</div>
+                                        <div class="text4">서울·한국</div>
+                                        <div class="text5">채용보상금 1,000,000원</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li><li class="gallery_li">
+                            <div class="gallery_box">
+                                <a href="/wd/133067" class="gallery_a"aria-label="position link" data-attribute-id="position__click" data-job-category-id="530" data-job-category="Sales" data-company-id="26431" data-company-name="레인보우로보틱스" data-position-id="133067" data-position-name="영업전략, 영업기획, 영업총괄" data-response-level="very_high" data-response-rate="100" data-ai-score="" data-ai-score-status="" data-recommend-model-status="notBase" data-recommend-model-index="0">
+                                    <header class="gallery_header">
+                                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F19%2Fjrvo3iu1po5snygl__1080_790.png&w=1000&q=75" width="250px"; height="187.5px"; alt="사진" >
+                                        <button class="gallery_button">
+                                            <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path><path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path></svg>
+                                        </button>
+                                    </header>
+                                    <div class="textbox">
+                                        <div class="text1">Automation QA Engineer</div>
+                                        <div class="text2">밸런스히어로 (트루밸런스)</div>
+                                        <div class="text3">응답률 매우 높음</div>
+                                        <div class="text4">서울·한국</div>
+                                        <div class="text5">채용보상금 1,000,000원</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="gallery_li">
+                            <div class="gallery_box">
+                                <a href="/wd/133067" class="gallery_a"aria-label="position link" data-attribute-id="position__click" data-job-category-id="530" data-job-category="Sales" data-company-id="26431" data-company-name="레인보우로보틱스" data-position-id="133067" data-position-name="영업전략, 영업기획, 영업총괄" data-response-level="very_high" data-response-rate="100" data-ai-score="" data-ai-score-status="" data-recommend-model-status="notBase" data-recommend-model-index="0">
+                                    <header class="gallery_header">
+                                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F19%2Fjrvo3iu1po5snygl__1080_790.png&w=1000&q=75" width="250px"; height="187.5px"; alt="사진" >
+                                        <button class="gallery_button">
+                                            <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path><path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path></svg>
+                                        </button>
+                                    </header>
+                                    <div class="textbox">
+                                        <div class="text1">Automation QA Engineer</div>
+                                        <div class="text2">밸런스히어로 (트루밸런스)</div>
+                                        <div class="text3">응답률 매우 높음</div>
+                                        <div class="text4">서울·한국</div>
+                                        <div class="text5">채용보상금 1,000,000원</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="gallery_li">
+                            <div class="gallery_box">
+                                <a href="/wd/133067" class="gallery_a"aria-label="position link" data-attribute-id="position__click" data-job-category-id="530" data-job-category="Sales" data-company-id="26431" data-company-name="레인보우로보틱스" data-position-id="133067" data-position-name="영업전략, 영업기획, 영업총괄" data-response-level="very_high" data-response-rate="100" data-ai-score="" data-ai-score-status="" data-recommend-model-status="notBase" data-recommend-model-index="0">
+                                    <header class="gallery_header">
+                                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F19%2Fjrvo3iu1po5snygl__1080_790.png&w=1000&q=75" width="250px"; height="187.5px"; alt="사진" >
+                                        <button class="gallery_button">
+                                            <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path><path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path></svg>
+                                        </button>
+                                    </header>
+                                    <div class="textbox">
+                                        <div class="text1">Automation QA Engineer</div>
+                                        <div class="text2">밸런스히어로 (트루밸런스)</div>
+                                        <div class="text3">응답률 매우 높음</div>
+                                        <div class="text4">서울·한국</div>
+                                        <div class="text5">채용보상금 1,000,000원</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="gallery_li">
+                            <div class="gallery_box">
+                                <a href="/wd/133067" class="gallery_a"aria-label="position link" data-attribute-id="position__click" data-job-category-id="530" data-job-category="Sales" data-company-id="26431" data-company-name="레인보우로보틱스" data-position-id="133067" data-position-name="영업전략, 영업기획, 영업총괄" data-response-level="very_high" data-response-rate="100" data-ai-score="" data-ai-score-status="" data-recommend-model-status="notBase" data-recommend-model-index="0">
+                                    <header class="gallery_header">
+                                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F19%2Fjrvo3iu1po5snygl__1080_790.png&w=1000&q=75" width="250px"; height="187.5px"; alt="사진" >
+                                        <button class="gallery_button">
+                                            <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path><path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path></svg>
+                                        </button>
+                                    </header>
+                                    <div class="textbox">
+                                        <div class="text1">Automation QA Engineer</div>
+                                        <div class="text2">밸런스히어로 (트루밸런스)</div>
+                                        <div class="text3">응답률 매우 높음</div>
+                                        <div class="text4">서울·한국</div>
+                                        <div class="text5">채용보상금 1,000,000원</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="gallery_li">
+                            <div class="gallery_box">
+                                <a href="/wd/133067" class="gallery_a"aria-label="position link" data-attribute-id="position__click" data-job-category-id="530" data-job-category="Sales" data-company-id="26431" data-company-name="레인보우로보틱스" data-position-id="133067" data-position-name="영업전략, 영업기획, 영업총괄" data-response-level="very_high" data-response-rate="100" data-ai-score="" data-ai-score-status="" data-recommend-model-status="notBase" data-recommend-model-index="0">
+                                    <header class="gallery_header">
+                                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F19%2Fjrvo3iu1po5snygl__1080_790.png&w=1000&q=75" width="250px"; height="187.5px"; alt="사진" >
+                                        <button class="gallery_button">
+                                            <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path><path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path></svg>
+                                        </button>
+                                    </header>
+                                    <div class="textbox">
+                                        <div class="text1">Automation QA Engineer</div>
+                                        <div class="text2">밸런스히어로 (트루밸런스)</div>
+                                        <div class="text3">응답률 매우 높음</div>
+                                        <div class="text4">서울·한국</div>
+                                        <div class="text5">채용보상금 1,000,000원</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="gallery_li">
+                            <div class="gallery_box">
+                                <a href="/wd/133067" class="gallery_a"aria-label="position link" data-attribute-id="position__click" data-job-category-id="530" data-job-category="Sales" data-company-id="26431" data-company-name="레인보우로보틱스" data-position-id="133067" data-position-name="영업전략, 영업기획, 영업총괄" data-response-level="very_high" data-response-rate="100" data-ai-score="" data-ai-score-status="" data-recommend-model-status="notBase" data-recommend-model-index="0">
+                                    <header class="gallery_header">
+                                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F19%2Fjrvo3iu1po5snygl__1080_790.png&w=1000&q=75" width="250px"; height="187.5px"; alt="사진" >
+                                        <button class="gallery_button">
+                                            <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path><path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path></svg>
+                                        </button>
+                                    </header>
+                                    <div class="textbox">
+                                        <div class="text1">Automation QA Engineer</div>
+                                        <div class="text2">밸런스히어로 (트루밸런스)</div>
+                                        <div class="text3">응답률 매우 높음</div>
+                                        <div class="text4">서울·한국</div>
+                                        <div class="text5">채용보상금 1,000,000원</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="gallery_li">
+                            <div class="gallery_box">
+                                <a href="/wd/133067" class="gallery_a"aria-label="position link" data-attribute-id="position__click" data-job-category-id="530" data-job-category="Sales" data-company-id="26431" data-company-name="레인보우로보틱스" data-position-id="133067" data-position-name="영업전략, 영업기획, 영업총괄" data-response-level="very_high" data-response-rate="100" data-ai-score="" data-ai-score-status="" data-recommend-model-status="notBase" data-recommend-model-index="0">
+                                    <header class="gallery_header">
+                                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F19%2Fjrvo3iu1po5snygl__1080_790.png&w=1000&q=75" width="250px"; height="187.5px"; alt="사진" >
+                                        <button class="gallery_button">
+                                            <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path><path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path></svg>
+                                        </button>
+                                    </header>
+                                    <div class="textbox">
+                                        <div class="text1">Automation QA Engineer</div>
+                                        <div class="text2">밸런스히어로 (트루밸런스)</div>
+                                        <div class="text3">응답률 매우 높음</div>
+                                        <div class="text4">서울·한국</div>
+                                        <div class="text5">채용보상금 1,000,000원</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="gallery_li">
+                            <div class="gallery_box">
+                                <a href="/wd/133067" class="gallery_a"aria-label="position link" data-attribute-id="position__click" data-job-category-id="530" data-job-category="Sales" data-company-id="26431" data-company-name="레인보우로보틱스" data-position-id="133067" data-position-name="영업전략, 영업기획, 영업총괄" data-response-level="very_high" data-response-rate="100" data-ai-score="" data-ai-score-status="" data-recommend-model-status="notBase" data-recommend-model-index="0">
+                                    <header class="gallery_header">
+                                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F19%2Fjrvo3iu1po5snygl__1080_790.png&w=1000&q=75" width="250px"; height="187.5px"; alt="사진" >
+                                        <button class="gallery_button">
+                                            <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path><path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path></svg>
+                                        </button>
+                                    </header>
+                                    <div class="textbox">
+                                        <div class="text1">Automation QA Engineer</div>
+                                        <div class="text2">밸런스히어로 (트루밸런스)</div>
+                                        <div class="text3">응답률 매우 높음</div>
+                                        <div class="text4">서울·한국</div>
+                                        <div class="text5">채용보상금 1,000,000원</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="gallery_li">
+                            <div class="gallery_box">
+                                <a href="/wd/133067" class="gallery_a"aria-label="position link" data-attribute-id="position__click" data-job-category-id="530" data-job-category="Sales" data-company-id="26431" data-company-name="레인보우로보틱스" data-position-id="133067" data-position-name="영업전략, 영업기획, 영업총괄" data-response-level="very_high" data-response-rate="100" data-ai-score="" data-ai-score-status="" data-recommend-model-status="notBase" data-recommend-model-index="0">
+                                    <header class="gallery_header">
+                                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F19%2Fjrvo3iu1po5snygl__1080_790.png&w=1000&q=75" width="250px"; height="187.5px"; alt="사진" >
+                                        <button class="gallery_button">
+                                            <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path><path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path></svg>
+                                        </button>
+                                    </header>
+                                    <div class="textbox">
+                                        <div class="text1">Automation QA Engineer</div>
+                                        <div class="text2">밸런스히어로 (트루밸런스)</div>
+                                        <div class="text3">응답률 매우 높음</div>
+                                        <div class="text4">서울·한국</div>
+                                        <div class="text5">채용보상금 1,000,000원</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="gallery_li">
+                            <div class="gallery_box">
+                                <a href="/wd/133067" class="gallery_a"aria-label="position link" data-attribute-id="position__click" data-job-category-id="530" data-job-category="Sales" data-company-id="26431" data-company-name="레인보우로보틱스" data-position-id="133067" data-position-name="영업전략, 영업기획, 영업총괄" data-response-level="very_high" data-response-rate="100" data-ai-score="" data-ai-score-status="" data-recommend-model-status="notBase" data-recommend-model-index="0">
+                                    <header class="gallery_header">
+                                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F19%2Fjrvo3iu1po5snygl__1080_790.png&w=1000&q=75" width="250px"; height="187.5px"; alt="사진" >
+                                        <button class="gallery_button">
+                                            <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path><path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path></svg>
+                                        </button>
+                                    </header>
+                                    <div class="textbox">
+                                        <div class="text1">Automation QA Engineer</div>
+                                        <div class="text2">밸런스히어로 (트루밸런스)</div>
+                                        <div class="text3">응답률 매우 높음</div>
+                                        <div class="text4">서울·한국</div>
+                                        <div class="text5">채용보상금 1,000,000원</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="gallery_li">
+                            <div class="gallery_box">
+                                <a href="/wd/133067" class="gallery_a"aria-label="position link" data-attribute-id="position__click" data-job-category-id="530" data-job-category="Sales" data-company-id="26431" data-company-name="레인보우로보틱스" data-position-id="133067" data-position-name="영업전략, 영업기획, 영업총괄" data-response-level="very_high" data-response-rate="100" data-ai-score="" data-ai-score-status="" data-recommend-model-status="notBase" data-recommend-model-index="0">
+                                    <header class="gallery_header">
+                                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F19%2Fjrvo3iu1po5snygl__1080_790.png&w=1000&q=75" width="250px"; height="187.5px"; alt="사진" >
+                                        <button class="gallery_button">
+                                            <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path><path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path></svg>
+                                        </button>
+                                    </header>
+                                    <div class="textbox">
+                                        <div class="text1">Automation QA Engineer</div>
+                                        <div class="text2">밸런스히어로 (트루밸런스)</div>
+                                        <div class="text3">응답률 매우 높음</div>
+                                        <div class="text4">서울·한국</div>
+                                        <div class="text5">채용보상금 1,000,000원</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="gallery_li">
+                            <div class="gallery_box">
+                                <a href="/wd/133067" class="gallery_a"aria-label="position link" data-attribute-id="position__click" data-job-category-id="530" data-job-category="Sales" data-company-id="26431" data-company-name="레인보우로보틱스" data-position-id="133067" data-position-name="영업전략, 영업기획, 영업총괄" data-response-level="very_high" data-response-rate="100" data-ai-score="" data-ai-score-status="" data-recommend-model-status="notBase" data-recommend-model-index="0">
+                                    <header class="gallery_header">
+                                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F19%2Fjrvo3iu1po5snygl__1080_790.png&w=1000&q=75" width="250px"; height="187.5px"; alt="사진" >
+                                        <button class="gallery_button">
+                                            <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path><path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path></svg>
+                                        </button>
+                                    </header>
+                                    <div class="textbox">
+                                        <div class="text1">Automation QA Engineer</div>
+                                        <div class="text2">밸런스히어로 (트루밸런스)</div>
+                                        <div class="text3">응답률 매우 높음</div>
+                                        <div class="text4">서울·한국</div>
+                                        <div class="text5">채용보상금 1,000,000원</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="gallery_li">
+                            <div class="gallery_box">
+                                <a href="/wd/133067" class="gallery_a"aria-label="position link" data-attribute-id="position__click" data-job-category-id="530" data-job-category="Sales" data-company-id="26431" data-company-name="레인보우로보틱스" data-position-id="133067" data-position-name="영업전략, 영업기획, 영업총괄" data-response-level="very_high" data-response-rate="100" data-ai-score="" data-ai-score-status="" data-recommend-model-status="notBase" data-recommend-model-index="0">
+                                    <header class="gallery_header">
+                                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F19%2Fjrvo3iu1po5snygl__1080_790.png&w=1000&q=75" width="250px"; height="187.5px"; alt="사진" >
+                                        <button class="gallery_button">
+                                            <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path><path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path></svg>
+                                        </button>
+                                    </header>
+                                    <div class="textbox">
+                                        <div class="text1">Automation QA Engineer</div>
+                                        <div class="text2">밸런스히어로 (트루밸런스)</div>
+                                        <div class="text3">응답률 매우 높음</div>
+                                        <div class="text4">서울·한국</div>
+                                        <div class="text5">채용보상금 1,000,000원</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="gallery_li">
+                            <div class="gallery_box">
+                                <a href="/wd/133067" class="gallery_a"aria-label="position link" data-attribute-id="position__click" data-job-category-id="530" data-job-category="Sales" data-company-id="26431" data-company-name="레인보우로보틱스" data-position-id="133067" data-position-name="영업전략, 영업기획, 영업총괄" data-response-level="very_high" data-response-rate="100" data-ai-score="" data-ai-score-status="" data-recommend-model-status="notBase" data-recommend-model-index="0">
+                                    <header class="gallery_header">
+                                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F19%2Fjrvo3iu1po5snygl__1080_790.png&w=1000&q=75" width="250px"; height="187.5px"; alt="사진" >
+                                        <button class="gallery_button">
+                                            <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path><path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path></svg>
+                                        </button>
+                                    </header>
+                                    <div class="textbox">
+                                        <div class="text1">Automation QA Engineer</div>
+                                        <div class="text2">밸런스히어로 (트루밸런스)</div>
+                                        <div class="text3">응답률 매우 높음</div>
+                                        <div class="text4">서울·한국</div>
+                                        <div class="text5">채용보상금 1,000,000원</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="gallery_li">
+                            <div class="gallery_box">
+                                <a href="/wd/133067" class="gallery_a"aria-label="position link" data-attribute-id="position__click" data-job-category-id="530" data-job-category="Sales" data-company-id="26431" data-company-name="레인보우로보틱스" data-position-id="133067" data-position-name="영업전략, 영업기획, 영업총괄" data-response-level="very_high" data-response-rate="100" data-ai-score="" data-ai-score-status="" data-recommend-model-status="notBase" data-recommend-model-index="0">
+                                    <header class="gallery_header">
+                                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F19%2Fjrvo3iu1po5snygl__1080_790.png&w=1000&q=75" width="250px"; height="187.5px"; alt="사진" >
+                                        <button class="gallery_button">
+                                            <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path><path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path></svg>
+                                        </button>
+                                    </header>
+                                    <div class="textbox">
+                                        <div class="text1">Automation QA Engineer</div>
+                                        <div class="text2">밸런스히어로 (트루밸런스)</div>
+                                        <div class="text3">응답률 매우 높음</div>
+                                        <div class="text4">서울·한국</div>
+                                        <div class="text5">채용보상금 1,000,000원</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="gallery_li">
+                            <div class="gallery_box">
+                                <a href="/wd/133067" class="gallery_a"aria-label="position link" data-attribute-id="position__click" data-job-category-id="530" data-job-category="Sales" data-company-id="26431" data-company-name="레인보우로보틱스" data-position-id="133067" data-position-name="영업전략, 영업기획, 영업총괄" data-response-level="very_high" data-response-rate="100" data-ai-score="" data-ai-score-status="" data-recommend-model-status="notBase" data-recommend-model-index="0">
+                                    <header class="gallery_header">
+                                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F19%2Fjrvo3iu1po5snygl__1080_790.png&w=1000&q=75" width="250px"; height="187.5px"; alt="사진" >
+                                        <button class="gallery_button">
+                                            <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path><path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path></svg>
+                                        </button>
+                                    </header>
+                                    <div class="textbox">
+                                        <div class="text1">Automation QA Engineer</div>
+                                        <div class="text2">밸런스히어로 (트루밸런스)</div>
+                                        <div class="text3">응답률 매우 높음</div>
+                                        <div class="text4">서울·한국</div>
+                                        <div class="text5">채용보상금 1,000,000원</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="gallery_li">
+                            <div class="gallery_box">
+                                <a href="/wd/133067" class="gallery_a"aria-label="position link" data-attribute-id="position__click" data-job-category-id="530" data-job-category="Sales" data-company-id="26431" data-company-name="레인보우로보틱스" data-position-id="133067" data-position-name="영업전략, 영업기획, 영업총괄" data-response-level="very_high" data-response-rate="100" data-ai-score="" data-ai-score-status="" data-recommend-model-status="notBase" data-recommend-model-index="0">
+                                    <header class="gallery_header">
+                                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F19%2Fjrvo3iu1po5snygl__1080_790.png&w=1000&q=75" width="250px"; height="187.5px"; alt="사진" >
+                                        <button class="gallery_button">
+                                            <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path><path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path></svg>
+                                        </button>
+                                    </header>
+                                    <div class="textbox">
+                                        <div class="text1">Automation QA Engineer</div>
+                                        <div class="text2">밸런스히어로 (트루밸런스)</div>
+                                        <div class="text3">응답률 매우 높음</div>
+                                        <div class="text4">서울·한국</div>
+                                        <div class="text5">채용보상금 1,000,000원</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="gallery_li">
+                            <div class="gallery_box">
+                                <a href="/wd/133067" class="gallery_a"aria-label="position link" data-attribute-id="position__click" data-job-category-id="530" data-job-category="Sales" data-company-id="26431" data-company-name="레인보우로보틱스" data-position-id="133067" data-position-name="영업전략, 영업기획, 영업총괄" data-response-level="very_high" data-response-rate="100" data-ai-score="" data-ai-score-status="" data-recommend-model-status="notBase" data-recommend-model-index="0">
+                                    <header class="gallery_header">
+                                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F19%2Fjrvo3iu1po5snygl__1080_790.png&w=1000&q=75" width="250px"; height="187.5px"; alt="사진" >
+                                        <button class="gallery_button">
+                                            <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path><path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path></svg>
+                                        </button>
+                                    </header>
+                                    <div class="textbox">
+                                        <div class="text1">Automation QA Engineer</div>
+                                        <div class="text2">밸런스히어로 (트루밸런스)</div>
+                                        <div class="text3">응답률 매우 높음</div>
+                                        <div class="text4">서울·한국</div>
+                                        <div class="text5">채용보상금 1,000,000원</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="gallery_li">
+                            <div class="gallery_box">
+                                <a href="/wd/133067" class="gallery_a"aria-label="position link" data-attribute-id="position__click" data-job-category-id="530" data-job-category="Sales" data-company-id="26431" data-company-name="레인보우로보틱스" data-position-id="133067" data-position-name="영업전략, 영업기획, 영업총괄" data-response-level="very_high" data-response-rate="100" data-ai-score="" data-ai-score-status="" data-recommend-model-status="notBase" data-recommend-model-index="0">
+                                    <header class="gallery_header">
+                                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F19%2Fjrvo3iu1po5snygl__1080_790.png&w=1000&q=75" width="250px"; height="187.5px"; alt="사진" >
+                                        <button class="gallery_button">
+                                            <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path><path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path></svg>
+                                        </button>
+                                    </header>
+                                    <div class="textbox">
+                                        <div class="text1">Automation QA Engineer</div>
+                                        <div class="text2">밸런스히어로 (트루밸런스)</div>
+                                        <div class="text3">응답률 매우 높음</div>
+                                        <div class="text4">서울·한국</div>
+                                        <div class="text5">채용보상금 1,000,000원</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="gallery_li">
+                            <div class="gallery_box">
+                                <a href="/wd/133067" class="gallery_a"aria-label="position link" data-attribute-id="position__click" data-job-category-id="530" data-job-category="Sales" data-company-id="26431" data-company-name="레인보우로보틱스" data-position-id="133067" data-position-name="영업전략, 영업기획, 영업총괄" data-response-level="very_high" data-response-rate="100" data-ai-score="" data-ai-score-status="" data-recommend-model-status="notBase" data-recommend-model-index="0">
+                                    <header class="gallery_header">
+                                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F19%2Fjrvo3iu1po5snygl__1080_790.png&w=1000&q=75" width="250px"; height="187.5px"; alt="사진" >
+                                        <button class="gallery_button">
+                                            <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path><path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path></svg>
+                                        </button>
+                                    </header>
+                                    <div class="textbox">
+                                        <div class="text1">Automation QA Engineer</div>
+                                        <div class="text2">밸런스히어로 (트루밸런스)</div>
+                                        <div class="text3">응답률 매우 높음</div>
+                                        <div class="text4">서울·한국</div>
+                                        <div class="text5">채용보상금 1,000,000원</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="gallery_li">
+                            <div class="gallery_box">
+                                <a href="/wd/133067" class="gallery_a"aria-label="position link" data-attribute-id="position__click" data-job-category-id="530" data-job-category="Sales" data-company-id="26431" data-company-name="레인보우로보틱스" data-position-id="133067" data-position-name="영업전략, 영업기획, 영업총괄" data-response-level="very_high" data-response-rate="100" data-ai-score="" data-ai-score-status="" data-recommend-model-status="notBase" data-recommend-model-index="0">
+                                    <header class="gallery_header">
+                                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F19%2Fjrvo3iu1po5snygl__1080_790.png&w=1000&q=75" width="250px"; height="187.5px"; alt="사진" >
+                                        <button class="gallery_button">
+                                            <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path><path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path></svg>
+                                        </button>
+                                    </header>
+                                    <div class="textbox">
+                                        <div class="text1">Automation QA Engineer</div>
+                                        <div class="text2">밸런스히어로 (트루밸런스)</div>
+                                        <div class="text3">응답률 매우 높음</div>
+                                        <div class="text4">서울·한국</div>
+                                        <div class="text5">채용보상금 1,000,000원</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="gallery_li">
+                            <div class="gallery_box">
+                                <a href="/wd/133067" class="gallery_a"aria-label="position link" data-attribute-id="position__click" data-job-category-id="530" data-job-category="Sales" data-company-id="26431" data-company-name="레인보우로보틱스" data-position-id="133067" data-position-name="영업전략, 영업기획, 영업총괄" data-response-level="very_high" data-response-rate="100" data-ai-score="" data-ai-score-status="" data-recommend-model-status="notBase" data-recommend-model-index="0">
+                                    <header class="gallery_header">
+                                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F19%2Fjrvo3iu1po5snygl__1080_790.png&w=1000&q=75" width="250px"; height="187.5px"; alt="사진" >
+                                        <button class="gallery_button">
+                                            <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path><path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path></svg>
+                                        </button>
+                                    </header>
+                                    <div class="textbox">
+                                        <div class="text1">Automation QA Engineer</div>
+                                        <div class="text2">밸런스히어로 (트루밸런스)</div>
+                                        <div class="text3">응답률 매우 높음</div>
+                                        <div class="text4">서울·한국</div>
+                                        <div class="text5">채용보상금 1,000,000원</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="gallery_li">
+                            <div class="gallery_box">
+                                <a href="/wd/133067" class="gallery_a"aria-label="position link" data-attribute-id="position__click" data-job-category-id="530" data-job-category="Sales" data-company-id="26431" data-company-name="레인보우로보틱스" data-position-id="133067" data-position-name="영업전략, 영업기획, 영업총괄" data-response-level="very_high" data-response-rate="100" data-ai-score="" data-ai-score-status="" data-recommend-model-status="notBase" data-recommend-model-index="0">
+                                    <header class="gallery_header">
+                                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F19%2Fjrvo3iu1po5snygl__1080_790.png&w=1000&q=75" width="250px"; height="187.5px"; alt="사진" >
+                                        <button class="gallery_button">
+                                            <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path><path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path></svg>
+                                        </button>
+                                    </header>
+                                    <div class="textbox">
+                                        <div class="text1">Automation QA Engineer</div>
+                                        <div class="text2">밸런스히어로 (트루밸런스)</div>
+                                        <div class="text3">응답률 매우 높음</div>
+                                        <div class="text4">서울·한국</div>
+                                        <div class="text5">채용보상금 1,000,000원</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="gallery_li">
+                            <div class="gallery_box">
+                                <a href="/wd/133067" class="gallery_a"aria-label="position link" data-attribute-id="position__click" data-job-category-id="530" data-job-category="Sales" data-company-id="26431" data-company-name="레인보우로보틱스" data-position-id="133067" data-position-name="영업전략, 영업기획, 영업총괄" data-response-level="very_high" data-response-rate="100" data-ai-score="" data-ai-score-status="" data-recommend-model-status="notBase" data-recommend-model-index="0">
+                                    <header class="gallery_header">
+                                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F19%2Fjrvo3iu1po5snygl__1080_790.png&w=1000&q=75" width="250px"; height="187.5px"; alt="사진" >
+                                        <button class="gallery_button">
+                                            <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path><path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path></svg>
+                                        </button>
+                                    </header>
+                                    <div class="textbox">
+                                        <div class="text1">Automation QA Engineer</div>
+                                        <div class="text2">밸런스히어로 (트루밸런스)</div>
+                                        <div class="text3">응답률 매우 높음</div>
+                                        <div class="text4">서울·한국</div>
+                                        <div class="text5">채용보상금 1,000,000원</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="gallery_li">
+                            <div class="gallery_box">
+                                <a href="/wd/133067" class="gallery_a"aria-label="position link" data-attribute-id="position__click" data-job-category-id="530" data-job-category="Sales" data-company-id="26431" data-company-name="레인보우로보틱스" data-position-id="133067" data-position-name="영업전략, 영업기획, 영업총괄" data-response-level="very_high" data-response-rate="100" data-ai-score="" data-ai-score-status="" data-recommend-model-status="notBase" data-recommend-model-index="0">
+                                    <header class="gallery_header">
+                                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F19%2Fjrvo3iu1po5snygl__1080_790.png&w=1000&q=75" width="250px"; height="187.5px"; alt="사진" >
+                                        <button class="gallery_button">
+                                            <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path><path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path></svg>
+                                        </button>
+                                    </header>
+                                    <div class="textbox">
+                                        <div class="text1">Automation QA Engineer</div>
+                                        <div class="text2">밸런스히어로 (트루밸런스)</div>
+                                        <div class="text3">응답률 매우 높음</div>
+                                        <div class="text4">서울·한국</div>
+                                        <div class="text5">채용보상금 1,000,000원</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="gallery_li">
+                            <div class="gallery_box">
+                                <a href="/wd/133067" class="gallery_a"aria-label="position link" data-attribute-id="position__click" data-job-category-id="530" data-job-category="Sales" data-company-id="26431" data-company-name="레인보우로보틱스" data-position-id="133067" data-position-name="영업전략, 영업기획, 영업총괄" data-response-level="very_high" data-response-rate="100" data-ai-score="" data-ai-score-status="" data-recommend-model-status="notBase" data-recommend-model-index="0">
+                                    <header class="gallery_header">
+                                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F19%2Fjrvo3iu1po5snygl__1080_790.png&w=1000&q=75" width="250px"; height="187.5px"; alt="사진" >
+                                        <button class="gallery_button">
+                                            <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path><path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path></svg>
+                                        </button>
+                                    </header>
+                                    <div class="textbox">
+                                        <div class="text1">Automation QA Engineer</div>
+                                        <div class="text2">밸런스히어로 (트루밸런스)</div>
+                                        <div class="text3">응답률 매우 높음</div>
+                                        <div class="text4">서울·한국</div>
+                                        <div class="text5">채용보상금 1,000,000원</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="gallery_li">
+                            <div class="gallery_box">
+                                <a href="/wd/133067" class="gallery_a"aria-label="position link" data-attribute-id="position__click" data-job-category-id="530" data-job-category="Sales" data-company-id="26431" data-company-name="레인보우로보틱스" data-position-id="133067" data-position-name="영업전략, 영업기획, 영업총괄" data-response-level="very_high" data-response-rate="100" data-ai-score="" data-ai-score-status="" data-recommend-model-status="notBase" data-recommend-model-index="0">
+                                    <header class="gallery_header">
+                                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F19%2Fjrvo3iu1po5snygl__1080_790.png&w=1000&q=75" width="250px"; height="187.5px"; alt="사진" >
+                                        <button class="gallery_button">
+                                            <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path><path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path></svg>
+                                        </button>
+                                    </header>
+                                    <div class="textbox">
+                                        <div class="text1">Automation QA Engineer</div>
+                                        <div class="text2">밸런스히어로 (트루밸런스)</div>
+                                        <div class="text3">
+                                           <span>응답률 매우 높음</span> 
+                                        </div>
+                                        <div class="text4">서울·한국</div>
+                                        <div class="text5">채용보상금 1,000,000원</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="gallery_li">
+                            <div class="gallery_box">
+                                <a href="/wd/133067" class="gallery_a"aria-label="position link" data-attribute-id="position__click" data-job-category-id="530" data-job-category="Sales" data-company-id="26431" data-company-name="레인보우로보틱스" data-position-id="133067" data-position-name="영업전략, 영업기획, 영업총괄" data-response-level="very_high" data-response-rate="100" data-ai-score="" data-ai-score-status="" data-recommend-model-status="notBase" data-recommend-model-index="0">
+                                    <header class="gallery_header">
+                                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F19%2Fjrvo3iu1po5snygl__1080_790.png&w=1000&q=75" width="250px"; height="187.5px"; alt="사진" >
+                                        <button class="gallery_button">
+                                            <svg width="22" height="22" viewBox="0 0 18 18" fill="none" xmlns="https://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z" fill="white"></path><path d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z" fill="black" fill-opacity="0.25"></path></svg>
+                                        </button>
+                                    </header>
+                                    <div class="textbox">
+                                        <div class="text1">Automation QA Engineer</div>
+                                        <div class="text2">밸런스히어로 (트루밸런스)</div>
+                                        <div class="text3">응답률 매우 높음</div>
+                                        <div class="text4">서울·한국</div>
+                                        <div class="text5">채용보상금 1,000,000원</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer_up">
+                <div class="up_left">
+                    <div class="logo">
+                        <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fuserweb%2Flogo_wanted_black.png&w=110&q=100" style="width: 110px; height: 39px;" >
+                    </div>
+                    <div class="info">
+                        <a href="https://www.wantedlab.com/" class="a1" aria-label="" target="_blank" rel="noopener noreferrer" data-attribute-id="fnb" data-fnb-kind="investment">기업소개</a>
+                        <a href="https://help.wanted.co.kr/hc/ko/articles/360035844551" class="a2" aria-label="" target="_blank" rel="noopener noreferrer" data-attribute-id="fnb" data-fnb-kind="termsOfUse">이용약관</a>
+                        <a href="https://www.wanted.co.kr/privacy" class="a3" aria-label="" target="_blank" rel="noopener noreferrer" data-attribute-id="fnb" data-fnb-kind="privacyPolicy">개인정보 처리방침</a>
+                        <a href="https://help.wanted.co.kr/hc/ko/" class="a4" aria-label="" target="_blank" rel="noopener noreferrer" data-attribute-id="fnb" data-fnb-kind="FAQ">고객센터</a>
+                    </div>
+                </div>
+                <div class="up_right">
+                    <div class="social_link">
+                        <a href="https://www.instagram.com/wantedjobs.kr/" aria-label="" target="_blank" rel="noopener noreferrer"><img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fuserweb%2Fsocial_instagram.png&amp;w=20&amp;q=100" alt="instagram"></a>
+                        <a href="https://www.youtube.com/channel/UC0tGZ6MqieGG2m5lA5PeQsw" target="_blank" rel="noopener noreferrer">
+                            <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fuserweb%2Fsocial_youtube.png&amp;w=25&amp;q=100" alt="youtube"></a>
+                        <a href="https://www.facebook.com/wantedkr" target="_blank" rel="noopener noreferrer">
+                            <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fuserweb%2Fsocial_facebook.png&amp;w=20&amp;q=100" alt="facebook"></a>
+                        <a href="https://blog.naver.com/wantedlab" target="_blank" class="aa" rel="noopener noreferrer">
+                            <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fuserweb%2Fsocial_blog.png&amp;w=20&amp;q=100" alt="blog"></a>
+                        <a href="https://pf.kakao.com/_XqCIxl" target="_blank" rel="noopener noreferrer">
+                            <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fuserweb%2Fsocial_kakao.png&amp;w=19&amp;q=100" alt="kakao"></a>
+                        <a href="https://post.naver.com/my.nhn?memberNo=18284175" target="_blank" rel="noopener noreferrer">
+                            <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fuserweb%2Fsocial_post.png&amp;w=20&amp;q=100" alt="post"></a>
+                        <a href="https://apps.apple.com/kr/app/id1074569961" target="_blank" rel="noopener noreferrer">
+                            <img src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fuserweb%2Fsocial_apple.png&amp;w=17&amp;q=100" alt="apple"></a>
+                        <a href="https://play.google.com/store/apps/details?id=com.wanted.android.wanted" target="_blank" 
+                        rel="noopener noreferrer"><img id="aa" src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fuserweb%2Fsocial_google.png&amp;w=17&amp;q=100" alt="google"></a>  
+                    </div>
+                </div>
+            </div>
+            <div class="footer_down">
+                <div class="adress"> 
+                    <p>
+                        (주)원티드랩 (대표이사:이복기) | 서울특별시 송파구 올림픽로 300 롯데월드타워 35층 | 통신판매번호 : 2020-서울송파-3147
+                        <br>
+                        유료직업소개사업등록번호 : (국내) 제2020-3230259-14-5-00018호 | (국외) 서울동부-유-2020-2 | 사업자등록번호 :   299-86-00021 | 02-539-7118
+                        <br>    
+                        © Wantedlab, Inc.
+                    </p>
+                </div>
+                <div class="select_country">
+                    <div class="iconbox">
+                        <img class="countryicon" src="https://static.wanted.co.kr/images/userweb/ico_KR.svg" alt="country flag KR"style="width:24px; height:17px;">
+                        <select class="country">
+                            <option value="KR">한국 (한국어)</option>
+                            <option value="JP">日本 (日本語)</option>
+                            <option value="WW">Worldwide (English)</option>
+                            <option value="SG">Singapore (English)</option>
+                        </select>
+                    </div>     
+                </div>
+        
+            </div>      
+        </div>
+    </div>
+</body>
+</html>

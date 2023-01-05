@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(실습)원티드 - 나다운 일의시작</title>
+    
+    <style>
+
+        .position_center{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position:fixed;
+            top: 50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+        }
+
+        .loader {
+            border: 16px solid #f3f3f3; /* Light grey */
+            border-top: 16px solid red;
+            border-right: 16px solid rgb(280, 110, 110);
+            border-bottom: 16px solid rgb(244, 179, 179);
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            animation: spin 2s linear infinite;
+            
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="position_center">
+        <h1>로딩중입니당 :)</h1>
+        <br>
+        <br>
+        <div class="loader"></div>
+    </div>
+    <script>
+        setTimeout(function(){
+            window.location.href="file:///C:/wisdom/%EC%9B%B9/%ED%81%B4%EB%A1%A0%EC%BD%94%EB%94%A9/%EB%A9%94%EC%9D%B8%ED%8E%98%EC%9D%B4%EC%A7%80/3%EC%B4%88%EB%A1%9C%EB%94%A9/wanted_modal.html";
+            },3000)
+    </script>
+</body>
+</html>

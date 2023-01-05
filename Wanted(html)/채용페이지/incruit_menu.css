@@ -1,0 +1,308 @@
+.menu_box{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 240px;
+    border: 1px solid lightgray;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.menu{
+    margin: 0;
+    padding: 0 40;
+    width: 1060px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu_title{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding-top: 40px;
+    width: 1060px;
+    height: 32px;
+  
+}
+
+.menu_title_left{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    width: 83px;
+    height: 32px;
+    font-size: 23px;
+    font-weight: bold;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.menu_title_left > button {
+    display: flex;
+    border: 1px solid lightgray;
+    background-color: white;
+    border-radius: 100%;
+    width: 26px;
+    height: 26px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.menu_title_left > button > svg {
+    margin-top: 3px;
+}
+
+
+
+.menu_title_middle1{
+    display: flex;
+    margin: auto 0;
+    padding: 0;
+    height: 25px;
+    border-right: 2px solid #ececec;
+    width: 28px;
+    
+    
+}
+
+.menu_title_middle2{
+    display: flex;
+    margin: auto 0;
+    padding: 0;
+    height: 25px;
+    border-left: 2px solid #ececec;
+    width: 28px;
+}
+
+
+.menu_title-right{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    width: 130.5px;
+    height: 32px;
+    font-size: 23px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.menu_title-right > button {
+    display: flex;
+    border: 1px solid lightgray;
+    background-color: white;
+    border-radius: 100%;
+    width: 26px;
+    height: 26px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menu_title-right > button > svg{
+    margin-top: 3px;
+}
+
+.menu_content{
+    margin: 0;
+    padding: 0;
+    width: 1060px;
+    height: 133px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu_content_top{
+    display: flex;
+    margin-top: 30px;
+    padding: 0;
+    height: 40px;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+#menu_button_1{
+    width: 95.4px;
+    height: 40px;
+    padding: 0 14px;
+    font-size: 13px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#menu_button_span1{
+    margin-right: 7px;
+}
+
+
+#menu_button_span2{
+    color: blue;
+    font-weight: bold;
+}
+
+#menu_button_2{
+    width: 111.4px;
+    height: 40px;
+    padding: 0 14px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background-color: white;
+
+}
+
+#menu_button_3{
+    width: 111.4px;
+    height: 40px;
+    padding: 0 14px;
+    font-size: 13px;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background-color: white;
+
+}
+
+#menu_button_4{
+    width: 104px;
+    height: 40px;
+    padding: 0 15px;
+    font-size: 13.5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    left: 605px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background-color: white;
+
+}
+
+.menu_hr{
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-font-smoothing: antialiased;
+    --nav-height: 50px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    font-family: Pretendard,Pretendard JP,Pretendard Std,-apple-system,system-ui,BlinkMacSystemFont,Roboto,Segoe UI,Helvetica,Arial,Apple SD Gothic Neo,Nanum Gothic,Malgun Gothic,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,sans-serif;
+    box-sizing: content-box;
+    height: 1px;
+    border: none;
+    flex-shrink: 0;
+    max-width: 1060px;
+    margin: 25px auto;
+    background-color:lightgray;
+}
+
+.menu_content_bottom{
+    margin: 0;
+    padding: 0;
+    height: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.menu_content_bottom > button {
+    display: flex;
+    justify-content: center;
+    border: none;
+    border-radius: 25px;
+    background-color: #f2fbf5;  
+    font-size: 13px;
+    margin-right: 8px;
+    padding: 6px 10px;
+    text-align: center;
+    align-items: center;
+    color:#333333;
+    width:150px;
+}
+
+.menu_content_bottom > button > img{
+    width: 16px;
+    height: 16px;
+}
+
+#button_menu_left{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 30px;
+    height:30px;
+    border: 1px solid #e1e2e3;
+    
+    background-color: white;
+    
+    justify-content: center;
+    align-content: center;
+}
+
+.button_menu_left_span{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 20px;
+    height:20px;
+    justify-content: center;
+    align-content: center;
+    vertical-align: middle;
+}
+
+.button_menu_left_svg{
+    padding: 0;
+    margin: auto auto;
+    color:#333333;
+    width:14px;
+    height:14px;
+}
+
+
+
+#button_menu_right{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 30px;
+    height:30px;
+    border: 1px solid #e1e2e3;
+    background-color: white;
+    justify-content: center;
+    align-content: center;
+}
+
+.button_menu_right_span{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 20px;
+    height:20px;
+    justify-content: center;
+    align-content: center;
+    vertical-align: middle;
+}
+
+.button_menu_right_svg{
+    padding: 0;
+    margin: auto auto;
+    color:#333333;
+    width:14px;
+    height:14px;
+}
